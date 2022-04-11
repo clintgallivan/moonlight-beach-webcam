@@ -6,6 +6,9 @@ function MainBody() {
   return (
     <main className={styles.main}>
       <h1 className={styles.title}>Moonlight Beach Volleyball Webcam</h1>
+      <div style={{ width: 250 }}>
+        <GoogleAd />
+      </div>
 
       <p className={styles.description}>We will be live soon! Stay tuned!</p>
 
@@ -24,9 +27,6 @@ https://instagram.com/best.of.encinitas?igshid=YmMyMTA2M2Y="
       </a>
 
       <div className={styles.card}></div>
-      <div style={{ width: 250 }}>
-        <GoogleAd />
-      </div>
     </main>
   );
 }
