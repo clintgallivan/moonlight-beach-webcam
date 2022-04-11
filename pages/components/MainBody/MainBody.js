@@ -24,7 +24,7 @@ function MainBody() {
           href="https://github.com/vercel/next.js/tree/canary/examples"
           className={styles.card}
         >
-          <div style={{ height: 200, width: 200 }}>
+          <div style={{ height: 200, width: 400 }}>
             <GoogleAd />
           </div>
           {/* <h2>Examples &rarr;</h2> */}
