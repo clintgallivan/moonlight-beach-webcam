@@ -5,11 +5,11 @@ function MainBody() {
   return (
     <main className={styles.main}>
       <h1 className={styles.title}>Moonlight Beach Volleyball Webcam</h1>
-      <GoogleAd />
+      {/* <GoogleAd /> */}
 
       <p className={styles.description}>We will be live soon! Stay tuned!</p>
 
-      {/* <div className={styles.grid}>
+      <div className={styles.grid}>
         <a href="https://nextjs.org/docs" className={styles.card}>
           <h2>Documentation &rarr;</h2>
           <p>Find in-depth information about Next.js features and API.</p>
@@ -24,8 +24,11 @@ function MainBody() {
           href="https://github.com/vercel/next.js/tree/canary/examples"
           className={styles.card}
         >
-          <h2>Examples &rarr;</h2>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <div style={{ height: 200, width: 200 }}>
+            <GoogleAd />
+          </div>
+          {/* <h2>Examples &rarr;</h2> */}
+          {/* <p>Discover and deploy boilerplate example Next.js projects.</p> */}
         </a>
 
         <a
@@ -35,7 +38,7 @@ function MainBody() {
           <h2>Deploy &rarr;</h2>
           <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
         </a>
-      </div> */}
+      </div>
     </main>
   );
 }

@@ -13,11 +13,13 @@ function GoogleAd() {
   return (
     <ins
       className="adsbygoogle"
-      style={{ display: 'block' }}
+      style={{
+        display: 'block',
+      }}
       data-ad-client={process.env.NEXT_PUBLIC_GOOGLE_ADSENSE}
       data-ad-slot="7181773959"
       data-ad-format="auto"
-      data-full-width-responsive="true"
+      data-full-width-responsive="false"
     />
   );
 }
