@@ -1,0 +1,26 @@
+.playButton {
+  // background-color: transparent;
+  // border-color: transparent;
+  // cursor: pointer;
+  
+}
+
+
+
+.playButton :active {
+  text-emphasis-color: white;
+  background-color: aqua;
+}
+
+.playButtonIcon {
+  color: black
+}
+
+.buttonContainer {
+  display: flex;
+  width: 560px;
+  height: 315px;
+  background-color: green;
+  justify-content: center;
+  align-items: center;
+}

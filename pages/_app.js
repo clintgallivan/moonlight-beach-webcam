@@ -1,26 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/globals.css';
-// import Script from 'next/script';
-
-// function MyApp({ Component, pageProps }) {
-//   return (
-//     <>
-//       <Script
-//         id="Adsense-id"
-//         data-ad-client={process.env.NEXT_PUBLIC_GOOGLE_ADSENSE}
-//         async
-//         strategy="afterInteractive"
-//         onError={(e) => {
-//           console.error('Script failed to load', e);
-//         }}
-//         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-//       />
-//       <Component {...pageProps} />
-//     </>
-//   );
-// }
-
-// export default MyApp;
-
 import { useEffect } from 'react';
 import Script from 'next/script';
 import { useRouter } from 'next/router';
