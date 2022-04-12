@@ -1,6 +1,7 @@
 import styles from '../../../styles/Home.module.css';
 import GoogleAd from '../GoogleAd/GoogleAd';
 import Image from 'next/image';
+import ReactPlayer from 'react-player';
 
 function MainBody() {
   return (
@@ -26,7 +27,16 @@ https://instagram.com/best.of.encinitas?igshid=YmMyMTA2M2Y="
         />
       </a>
 
-      <div className={styles.card}></div>
+      <ReactPlayer
+        url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        config={{
+          file: {
+            attributes: {
+              controlsList: 'nodownload',
+            },
+          },
+        }}
+      />
     </main>
   );
 }
