@@ -22,10 +22,10 @@ function VideoStream() {
       // src="https://www.youtube.com/embed/vF9QRJwJXJk"
       src="http://127.0.0.1:5000/"
       title="YouTube video player"
-      frameborder="0"
+      frameBorder="0"
       // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
+      allowFullScreen
     ></iframe>
   );
 
