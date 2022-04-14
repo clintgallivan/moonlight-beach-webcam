@@ -37,8 +37,8 @@ function VideoStream() {
         <></>
       )}
       <iframe
-        width={size.width / 1.5}
-        height={((size.width / 1.5) * 4) / 3}
+        width={560}
+        height={315}
         src="https://enigmatic-hollows-62142.herokuapp.com"
         title="YouTube video player"
         frameBorder="0"
