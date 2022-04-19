@@ -13,7 +13,7 @@ function MainBody() {
         <GoogleAd />
       </div>
 
-      <p className={styles.description}>We will be live soon! Stay tuned!</p>
+      {/* <p className={styles.description}>We will be live soon! Stay tuned!</p> */}
 
       <a
         href="https://instagram.com/best.of.encinitas?igshid=YmMyMTA2M2Y=

@@ -7,7 +7,7 @@ import styles from './VideoStream.module.scss';
 import { Button } from 'react-bootstrap';
 import { Spinner } from 'react-bootstrap';
 import useWindowSize from '../../../hooks/useWindowSize';
-
+// import Player from 'video-react/lib/components/Player';
 function VideoStream() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -15,27 +15,20 @@ function VideoStream() {
   const size = useWindowSize();
 
   return !isPlaying ? (
-    <div
-      className={styles.buttonContainer}
-      style={{
-        width: size.width / 1.5,
-        height: ((size.width / 1.5) * 2) / 4,
-      }}
-    >
-      <Button onClick={() => setIsPlaying(true)}>
-        <BsPlayBtn size={70} className={styles.playButtonIcon} />
-      </Button>
-    </div>
+    <Button className={styles.card} onClick={() => setIsPlaying(true)}>
+      <BsPlayBtn size={70} className={styles.playButtonIcon} />
+    </Button>
   ) : (
     <>
       {!isLoaded ? (
         <>
           <Spinner animation="border" style={{ marginTop: 50 }} />
-          <h2>Bare with us please :) We are a small business</h2>
+          <h2>This could take up to 30 seconds!</h2>
         </>
       ) : (
         <></>
       )}
+
       <iframe
         width={560}
         height={315}
@@ -46,6 +39,9 @@ function VideoStream() {
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
+      {/* <Player>
+        <source src="https://enigmatic-hollows-62142.herokuapp.com" />
+      </Player> */}
     </>
   );
 }
