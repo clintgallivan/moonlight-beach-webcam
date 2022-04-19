@@ -9,6 +9,10 @@ export default function Home() {
       <Head>
         <title>Moonlight Beach Volleyball Webcam</title>
         <meta name="description" content="Moonlight Beach Volleyball Webcam" />
+        <meta
+          name="google-site-verification"
+          content="iXkJSIEv6HiDbE8tU-qjtMlIA_eRFYpMJ13yZpVoEVI"
+        />
         <link rel="icon" href="/volleyball_48px.ico" />
       </Head>
 
