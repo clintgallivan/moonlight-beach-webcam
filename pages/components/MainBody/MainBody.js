@@ -29,29 +29,7 @@ https://instagram.com/best.of.encinitas?igshid=YmMyMTA2M2Y="
         />
       </a>
 
-      {/* <ReactPlayer
-        style={{ backgroundColor: 'grey' }}
-        url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        // url="http://127.0.0.1:5000/"
-        config={{
-          file: {
-            attributes: {
-              controlsList: 'nodownload',
-            },
-          },
-        }}
-      /> */}
       <VideoStream />
-      {/* <iframe
-        width="560"
-        height="315"
-        // src="https://www.youtube.com/embed/vF9QRJwJXJk"
-        src="http://127.0.0.1:5000/"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe> */}
     </main>
   );
 }
