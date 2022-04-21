@@ -13,7 +13,13 @@ function VideoStream() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   const size = useWindowSize();
+  console.log(size);
 
+  const removeSpinner = () => {
+    setTimeout(() => {
+      setIsLoaded(true);
+    }, 2000);
+  };
   return !isPlaying ? (
     <Button className={styles.card} onClick={() => setIsPlaying(true)}>
       <BsPlayBtn size={70} className={styles.playButtonIcon} />
@@ -23,25 +29,24 @@ function VideoStream() {
       {!isLoaded ? (
         <>
           <Spinner animation="border" style={{ marginTop: 50 }} />
-          <h2>This could take up to 30 seconds!</h2>
+          {removeSpinner()}
         </>
       ) : (
         <></>
       )}
-
       <iframe
-        width={560}
-        height={315}
-        src="https://enigmatic-hollows-62142.herokuapp.com"
-        title="YouTube video player"
+        className={[styles.frame]}
+        style={{ width: 442, height: 200 }}
+        // width={700}
+        // height={300}
+        src="https://enigmatic-hollows-62142.herokuapp.com/video"
+        // src="http://127.0.0.1:5000/video"
+        title="Live Stream"
         frameBorder="0"
-        onLoad={() => console.log(setIsLoaded(true))}
-        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        // onLoad={() => console.log('loaded')}
+        // allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
-      {/* <Player>
-        <source src="https://enigmatic-hollows-62142.herokuapp.com" />
-      </Player> */}
     </>
   );
 }
