@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Moonlight Beach Volleyball Webcam</title>
+        <title>Moonlight Beach Volleyball</title>
         <meta name="description" content="Moonlight Beach Volleyball Webcam" />
         <meta
           name="google-site-verification"
