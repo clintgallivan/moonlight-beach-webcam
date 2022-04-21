@@ -14,6 +14,11 @@ export default function Home() {
           content="iXkJSIEv6HiDbE8tU-qjtMlIA_eRFYpMJ13yZpVoEVI"
         />
         <link rel="icon" href="/volleyball_48px.ico" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9212179920162307"
+          crossorigin="anonymous"
+        ></script>
       </Head>
 
       <MainBody />
